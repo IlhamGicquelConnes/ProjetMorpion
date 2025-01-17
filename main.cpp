@@ -1,15 +1,18 @@
-#include <QCoreApplication>
+#include "mainwindow.h"
 #include "joueur.h"
 #include <iostream>
 #include <string>
 
+#include <QApplication>
 
 int main(int argc, char *argv[])
-{   
-    QCoreApplication a(argc, argv);
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
     // Déclaration des variables pour les joueurs.
-
+/*
     std::string nomJoueur1, nomJoueur2;
     std::string couleurJoueur1, couleurJoueur2;
 
@@ -26,6 +29,7 @@ int main(int argc, char *argv[])
     std::getline(std::cin, nomJoueur2);
     std::cout << "Joueur 2, choisissez une couleur : ";
     std::getline(std::cin, couleurJoueur2);
+*/
 
     return a.exec();
 }

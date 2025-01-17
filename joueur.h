@@ -13,11 +13,15 @@ public:
 
     std::string couleur() const;
 
+    char symboleJoueur1() const;
+
+    char symboleJoueur2() const;
+
 private:
     std::string m_nom;
     std::string m_couleur;
-    char symboleJoueur1;
-    char symboleJoueur2;
+    char m_symboleJoueur1;
+    char m_symboleJoueur2;
 
 };
 
